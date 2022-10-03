@@ -1,0 +1,276 @@
+---
+title: "TRABALHO FINAL - MÉTODOS QUANTITATIVOS EM CIÊNCIA POLÍTICA"
+author: "ENIO SOUZA - 200002856"
+date: "2022-09-28"
+output: html_document
+---
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# POLÍTICAS PÚBLICAS E O EXTRATIVISMO VEGETAL NO BRASIL
+
+## Resumo
+
+A POLÍTICA DE GARANTIA DOS PREÇOS MÍNIMOS DOS PRODUTOS DA SOCIOBIODIVERSIDADE (PGPM-Bio) é uma iniciativa estatal que visa subsidiar o extrativista de produtos vegetais sempre que o preço dos produtos de sua coleta atingirem valores inferiores ao preço mínimo estipulado anualmente em portaria ministerial. A política tem por objetivo garantir renda mínima ao extrativista, de modo que este seja estimulado a continuar na atividade extrativa de modo sustentável e, assim, zelar pela preservação das espécies da sociobiodiversidade. Este artigo correlacionar a intervenção com o aumento da produção.
+
+## Introdução:
+
+O território brasileiro é formado por seis biomas distintos: Amazônia, Cerrado, Caatinga, Mata Atlântica, Pantanal e Pampa, cada qual composto por uma gama importante de espécies da fauna e flora específicas, por vezes, endêmicas. Vários estudos têm demonstrado a riqueza desses biomas, mas há muito ainda a se conhecer, principalmente sobre as propriedades nutricionais e medicinais das respectivas vegetações que povoam esses biomas. Na linha de se conhecer e aproveitar os recursos desses biomas de forma sustentável vem ocorrendo o debate Sociobiodiversidade e Economia Verde.
+
+O PNUMA define economia verde como um modelo econômico que resulta em "melhoria do bem-estar da humanidade e igualdade social, ao mesmo tempo em que reduz significativamente riscos ambientais e escassez ecológica" (PNUMA 2010). Em outras palavras, uma economia verde tem baixa emissão de carbono, é eficiente em seu uso de recursos e é socialmente inclusiva. Em uma economia verde, o crescimento de renda e emprego deve ser impulsionado por investimentos públicos e privados que reduzam as emissões de carbono e a poluição, aumentem a eficiência energética e o uso de recursos e impeçam a perda da biodiversidade e dos serviços ecossistêmicos. Esses investimentos precisam ser catalisados e apoiados por gastos públicos direcionados, reformas políticas e mudanças nas regulamentações.
+
+O caminho do desenvolvimento deve manter, aprimorar e, quando necessário, reconstruir o capital natural como um bem econômico crítico e como uma fonte de benefícios públicos. Isso é especialmente importante para a população carente, cujo sustento e segurança dependem da natureza. O objetivo chave de uma transição para uma economia verde é possibilitar o crescimento econômico e investimentos, aprimorando ao mesmo tempo a qualidade ambiental e a inclusão social. Um fator crítico para atingir tal objetivo é criar as condições propícias para que investimentos públicos e privados incorporem critérios ambientais e sociais mais amplos.
+
+Além disso, os principais indicadores de desempenho econômico, tais como o crescimento do Produto Interno Bruto (PIB), precisam ser ajustados a fim de englobarem a poluição, o esgotamento dos recursos, a diminuição de serviços ecossistêmicos e as consequências distribucionais da perda de capital natural para a população carente. (PNUMA, 2011, p. 17) (Grifo Nosso) Ultimamente, observa-se que as cadeias produtivas da sociobiodiversidade têm demonstrado capacidade de enfrentamento de questões socioambientais, ainda que incipientemente, bem como a inclusão sócio produtiva de extrativistas, povos e comunidades tradicionais e agricultores familiares que manejam e conservam a biodiversidade nativa, resultando no uso sustentável do meio ambiente e até mesmo sua recuperação, ao mesmo tempo em que gera renda e oferta alimentos saudáveis, frescos ou processados, com altos valores nutritivos que aos poucos se incorporam nas dietas das famílias que vivem no meio urbano.
+
+A noção de "produtos da sociobiodiversidade" está relacionada a uma ressignificação do debate em torno do extrativismo, especialmente de produtos florestais não madeiráveis (PFNM), como frutas, cascas, folhas, seivas, castanhas, entre outros. A partir dos anos 2000, o debate sobre o extrativismo no Brasil incorpora outras dimensões, indo além dos estudos acerca de sua sustentabilidade ecológica, dando maior importância aos extrativistas e destacando a importância econômica, ambiental, social e cultural da atividade. (Ramos, 2017, p. 105) (Grifo Nosso) Abramovay (2012), apud Lima et tal, apoia a economia verde e convoca as estruturas multilaterais (governo, empresas e sociedade civil) a pensarem para além dela ao apropriar-se de uma vertente pensada pela geógrafa Bertha Becker, que é a da economia do conhecimento da natureza, que consiste na exploração benéfica dos recursos disponíveis na sociobiodiversidade e que objetiva criar "cadeias de valor ligadas a produtos florestais (madeireiros e não madeireiros), mas também a serviços ecossistêmicos, com base nos quais prosperem negócios que beneficiem as populações que vivem em regiões de grande riqueza biológica". (Lima et tal, 2017, p. 39)
+
+Após a definição dos fundamentos e objetivos da Política Agrícola nacional dada pela Lei nº 8.171, de 17/01/1991, o Estado brasileiro passou a planejar, regular e fiscalizar as atividades agrícolas, de forma promover iniciativas que protejam, conservem e recuperem os recursos naturais, ao tempo em que também viabilizem a produção e a comercialização de produtos agropecuários, florestais ou pesqueiros, e, ainda, fomentem o associativismo e o cooperativismo. Entre outras iniciativas, nesse contexto se insere a Política de Garantia de Preços Mínimos para Produtos da Sociobiodiversidade (PGPM-Bio) que se utiliza do instrumento Subvenção Econômica Direta ao Produtor Extrativista (SPDE), instituído em 2009, com o fito de abranger produtos nativos advindos do trabalho extrativo. Essa política visa garantir uma receita mínima aos produtores por meio do prêmio de subvenção para diversos produtos agropecuários e extrativos.
+
+Para tanto, anualmente o Ministério da Agricultura e Pecuária e Abastecimento (MAPA), a partir de estudos realizados pela Companhia Nacional de Abastecimento (Conab), por meio de metodologia própria, revê os preços mínimos que balizarão a subvenção do ano seguinte e os publicam em portaria específica. A partir da fixação desses preços em portaria, os extrativistas que venderem os produtos de sua coleta a preços inferiores ao estipulado, podem pleitear a diferença, mediante apresentação da nota fiscal de venda e outros documentos, desde de que estejam em conformidade com os termos do art. 3º da Lei nº 11.326, de 24/07/2006, que possuam Declaração de Aptidão ao Pronaf (DAP) principal válida (ou outro documento que vier a substituí-la), assim como suas associações ou cooperativas, formalmente constituídas como pessoa jurídica de direito privado, que detenham a DAP jurídica válida (ou outro documento que vier a substituí-la).
+
+Atualmente são 17 produtos abarcados pela PGPM-Bio, cujos preços mínimos para 2022 estão fixados Portaria MAPA n.º 376, de 22/12/2021, quais sejam: açaí, andiroba, babaçu, baru, borracha extrativa, buriti, cacau extrativo, castanha-do-brasil, juçara, macaúba, mangaba, murumuru, pequi, piaçava, pinhão, pirarucu de manejo e umbu. Ao aplicar a política presume-se que o Governo Federal estimula o extrativista a não perder o interesse na coleta de determinados produtos do extrativismo e assim atuar como guardião das espécies nativas amparadas pela política. Diante da aplicação da PGPM-Bio nos últimos anos, esse artigo pretende compreender a amplitude de operação da política frente ao possível alcance potencial, tendo em vista os dados obtidos do IBGE, que, sabidamente, não contempla todos os postulantes ao acesso. Esses dados constam na publicação Produção da Extração Vegetal e da Silvicultura -- PEVS. .
+
+## Revisão Bibliográfica
+
+A renda do produtor rural é afetada por diversos fatores, tais como: características edáficas, condições climáticas de cada região, períodos de safra e entressafra, ataque de pragas e doenças, dentre outros, que impactam diretamente sua renda pela variação dos custos de produção, dos quais derivam os preços dos produtos. Para mitigar tais efeitos, o Governo Federal criou a Política de Garantia de Preços Mínimos (PGPM), cujo nascedouro se deu com o Decreto-Lei nº 5.212, de 21/01/1943, que cria Comissão de Financiamento da Produção (CFP). Desde então o Estado criou diversos instrumentos normativos na intenção de apoiar o produtor rural, minimizando os riscos da atividade rural, ao tempo em que garante renda ao produtor e minimiza as possibilidades de desabastecimento nacional.
+
+O Decreto-Lei nº 79, de 19/12/1966 representa um marco na busca de amparo aos produtores rurais em relação às vulnerabilidades que a variação de preços os expõem, ao instituir as normas para a fixação de Preços Mínimos e execução das operações de financiamento e aquisição de produtos agropecuários constantes da pauta da Política de Garantia de Preços Mínimos (PGPM), a qual utiliza os instrumentos: Aquisição do Governo Federal (AGF) e Empréstimo do Governo Federal (EGF).
+
+### Quadro 1 -- Evolução normativa
+
+```{r}
+library("readxl")
+```
+
+```{r}
+evolução_normativa <- readxl::read_excel("evolução_normativa.xlsx")
+```
+
+```{r}
+knitr::kable(head(evolução_normativa[, 1:3]), "simple")
+```
+
+Fonte: Diário Oficial da União
+
+A PGPM é uma importante ferramenta para diminuir oscilações na renda dos produtores rurais e assegurar uma remuneração mínima, atuando como balizadora da oferta de alimentos, incentivando ou desestimulando a produção e garantindo a regularidade do abastecimento nacional.
+
+A Conab efetiva a PGPM junto ao produtor rural, tendo sob sua responsabilidade a execução dos instrumentos desta Política. (Conab, 2022) Além dos normativos já citados, a seguir apresenta-se outros que exercem papel relevante na política agrícola brasileira e que contextualizam a evolução normativa dentro do contexto de abordagem deste artigo. Todavia, existem outros normativos que não estão elencados no quadro seguinte, vez que, por ora, esses são suficientes para a compreensão do contexto proposto.
+
+Todavia, somente uma década após a Conferência das Nações Unidas sobre meio ambiente e desenvolvimento, no Rio de Janeiro em 1992 (dentro da Convenção sobre Diversidade Biológica), é que políticas voltadas à biodiversidade e aos povos que dela vivem ganharam maior destaque. Destacam-se os Decretos nº 4339, de 22/08/2002, e nº 6.040, de 07/02/2007, que instituem, respectivamente, a Política Nacional de Biodiversidade e a Política Nacional de Desenvolvimento Sustentável dos Povos e Comunidades Tradicionais, os quais acentuam o valor do fomento da atividade extrativa sustentável e fortalecimento dos direitos territoriais, sociais, ambientais, econômicos e culturais desses povos que vivem do extrativismo vegetal.
+
+Derivados desses instrumentais normativos, nascem programas voltados para o fomento das atividades comerciais como: a). o Programa de Garantia de Preços para Agricultura Familiar (PGPAF), b). o Programa de Aquisição de Alimentos (PAA) e c). a Política de Garantia de Preços Mínimos para Produtos da Sociobiodiversidade (PGPM-Bio). A partir desse arcabouço normativo, entre 2007 e 2008, nasce então a Política de Garantia de Preços Mínimos para Produtos da Sociobiodiversidade (PGPM-Bio), criada a partir do Eixo 7.3 do Plano Nacional de Promoção das Cadeias de Produtos da Sociobiodiversidade (PNPCPS), no qual se abordou a "Estruturação e Fortalecimento de Mercados para os Produtos da Sociobiodiversidade" (BRASIL, 2009, p. 14).
+
+O PNPCPS foi concebido após diversas consultas e seminários, realizadas pelo então Ministério do Desenvolvimento Agrário (MDA) com o objetivo de levantar as estratégias e metas necessárias para sanar os gargalos e entraves das cadeias produtivas da sociobiodiversidade. Ademais, de modo a viabilizar a PGPM-Bio, foi criada a Subvenção Direta ao Produtor Extrativista (SDPE), cuja abertura se deu com a promulgação da Lei nº 11.775, de 17/09/2008: [...] Art. 48. Os arts. 1º, 2º, 3º e 4º da Lei no 8.427, de 27 de maio de 1992, passam a vigorar com a seguinte redação: [...] IV - no máximo, à diferença entre o preço mínimo e o valor de venda de produtos extrativos produzidos por agricultores familiares enquadrados nos termos do art. 3º da Lei no 11.326, de 24 de julho de 2006, ou por suas cooperativas e associações, limitada às dotações orçamentárias e aos critérios definidos em regulamento; [...] "Art. 3º A concessão de subvenção econômica, sob a forma de equalização de preços, obedecerá aos limites, às condições, aos critérios e à forma estabelecidos, em conjunto, pelos Ministérios da Fazenda, do Planejamento, Orçamento e Gestão, e da Agricultura, Pecuária e Abastecimento, de acordo com as disponibilidades orçamentárias e financeiras existentes para a finalidade, com a participação: I - do Ministério do Desenvolvimento Agrário, quando se tratar das operações previstas no § 2º do art. 2o desta Lei; e II - do Ministério do Meio Ambiente, quando se tratar das operações previstas no inciso IV do caput e de produtos extrativos incluídos no § 2º, ambos do art. 2º desta Lei." [...] Art. 54.
+
+O art. 5º do Decreto-Lei nº 79, de 19 de dezembro de 1966, passa a vigorar com a seguinte redação: "Art. 5º Os preços mínimos básicos serão definidos pelo Conselho Monetário Nacional - CMN, levando em conta os diversos fatores que influem nas cotações dos mercados, interno e externo, e os custos de produção, com base em proposta encaminhada ao Ministério da Fazenda pelo Ministério da Agricultura, Pecuária e Abastecimento - MAPA. § 1º Os preços mínimos definidos pelo CMN serão publicados por meio de portaria do Mapa, com antecedência de no mínimo 60 (sessenta) dias do início das épocas de plantio e de 30 (trinta) dias do início da produção pecuária ou extrativa mais abundante nas diversas regiões, consoante as indicações dos órgãos competentes. § 2º As portarias poderão, também, estabelecer, quanto a determinados produtos, que as garantias previstas neste Decreto-Lei perdurarão por mais de 1 (um) ano ou safra, quando isso interessar à estabilidade da agricultura e à normalidade de abastecimento.". (Brasil, 2008)
+
+Assim, a SPDE visa "Proporcionar, por meio de subvenção econômica, o pagamento de um bônus ao produtor extrativista, que comprovar a venda de produto extrativo, por preço inferior ao mínimo fixado pelo Governo Federal, fomentando, assim, a proteção ao meio ambiente por meio de seu uso racional." (Conab, 2021) Nessa perspectiva o extrativismo é tratado como uma atividade econômica, diferente de uma simples tarefa de coleta ou caça para o próprio consumo.
+
+Desta forma, várias cadeias produtivas têm em sua base de sustentação os produtores extrativistas, como no caso do babaçu, castanha do Brasil, mangaba, umbu, pinhão, açaí, cacau, piaçava, e tantos outros produtos vegetais não madeireiros. (Conab, 2021) Para entender o espectro da PGPM-Bio e perceber suas delimitações é importante apresentar as conceituações de produtos da biodiversidade e agroextrativismo, presentes nos normativos que regulamentam a política, os quais estão caracterizados na Instrução Normativa Conjunta MAPA/MMA N.º 17, de 28/05/2009, e no Título 35 - SUBVENÇÃO DIRETA AO PRODUTOR EXTRATIVISTA (SPDE) do Manual de Operações da Conab (MOC), definidos, respectivamente, na forma abaixo transcrita: Produtos da Sociobiodiversidade: bens e serviços (produtos finais, matérias-primas ou benefícios) gerados a partir de recursos da biodiversidade, voltados à formação de cadeias produtivas de interesse dos povos e comunidades tradicionais e de agricultores familiares, que promovam a manutenção e valorização de suas práticas e saberes, e assegurem os direitos decorrentes, gerando renda e promovendo a melhoria de sua qualidade de vida e do ambiente em que vivem; (Brasil, 2009)
+
+Para efeito deste Título considera-se extrativismo como sendo o conjunto de práticas associadas ao manejo sustentável dos recursos naturais, de forma especial a atividade de coleta de produtos naturais. Extrativismo abrange também o conceito de agroextrativismo, que é a "combinação de atividades extrativas com técnicas de cultivo, criação e beneficiamento. É orientado para a diversificação, consórcio de espécies, imitação da estrutura e dos padrões do ambiente natural e uso de técnicas desenvolvidas pela pesquisa a partir dos saberes e práticas tradicionais, do conhecimento dos ecossistemas e das condições ecológicas regionais". (Brasil, 2021) Toda a documentação necessária para que o extrativista tenha acesso à PGPM-Bio está descrita no Título 35 do MOC/Conab, o qual tem por finalidade precípua ": Proporcionar, por meio de subvenção econômica, o pagamento de um bônus ao produtor extrativista, que comprovar a venda de produto extrativo, por preço inferior ao mínimo fixado pelo Governo Federal, fomentando, assim, a proteção ao meio ambiente por meio de seu uso racional." (CONAB, 2021)
+
+Segundo dados compilados do Sistema de Subvenção da Sociobiodiversidade (SISBIO), desde 2009, quando a PGPM-Bio teve início, até o ano de 2021, os pagamentos acumulados das subvenções atingiram o montante de R\$ 120.332.356,64, para mais de 153 mil toneladas de produtos e 84.597 beneficiários. O gráfico seguinte representa as oscilações dos recursos aplicados no âmbito da política no interregno compreendido entre 2009 a 2021, bem como o volume de produtos em toneladas e número de beneficiários:
+
+### Gráfico dados de Subvenção:
+
+```{r}
+dados_sub_ano_ano <- readxl::read_excel("dados_sub_ano_ano.xlsx")
+```
+
+```{r}
+ggplot2::ggplot(dados_sub_ano_ano, ggplot2::aes(x=ano, y=valor_reais)) + 
+  ggplot2::geom_col()
+ggplot2::ggplot(dados_sub_ano_ano, ggplot2::aes(x=ano, y=quantidade_kilos)) + 
+  ggplot2::geom_col()
+```
+
+Para efeito de determinação do volume dos produtos da sociobiodiversidade que a política pode alcançar em cada ano, ficou estabelecido, a partir da edição da Portaria Interministerial MAPA/ME nº 8, de 30/12/2020, que devem ser utilizados os dados do Instituto Brasileiro de Geografia e Estatística (IBGE) que compõem o levantamento anual da Produção da Extração Vegetal e da Silvicultura (PEVS), conforme o inciso XVI, Art. 1º, da referida portaria: XVI - serão suspensos os pagamentos de subvenção aos agricultores familiares para os produtos extrativos quando o volume total negociado, por microrregião, ultrapassar a produção informada na publicação "Produção da Extração Vegetal e da Silvicultura (PVES)" do Instituto Brasileiro de Geografia e Estatística (IBGE).
+
+Todavia, em 2021, o IBGE ainda não dispunha de todos os dados necessários para que a portaria pudesse ser cumprida na íntegra. Assim, a Conab e o instituto realizaram, nesse mesmo ano, uma série de reuniões técnicas para discussão dos dados da PEVS, a fim de buscar a ampliação e qualificação da pesquisa, com o auxílio de parceiros como o MAPA, o Serviço Florestal Brasileiro (SFB), Ministério da Economia, as redes de Assistência Técnica e Extensão Rural estaduais (ATER), entre outros.
+
+A pesquisa da Produção de Extração Vegetal e da Silvicultura tem por finalidade fornecer informações estatísticas sobre a quantidade e o valor das produções obtidas mediante o processo de exploração dos recursos florestais naturais, denominado extrativismo vegetal, bem como da exploração de maciços florestais plantados (Silvicultura).
+
+A área total existente e a área colhida de cultivos florestais são também objetos da pesquisa. (IBGE, 2022) No final de 2021, técnicos da Conab foram a campo para aprofundar seus conhecimentos quanto as cadeias produtivas de produtos da sociobiodiversidade, momento em que se observou, a partir de entrevistas in situ, que é bastante significativa a parcela dos extrativistas que tem nessa atividade sua principal fonte de renda.
+
+Essas visitas de campo foram importantes para compreender os modus vivendi e operandi das famílias que desenvolvem a atividade extrativa vegetal e que dela dependem. As impressões derivadas do contato com os extrativistas estão registradas em relatórios internos da Conab.
+
+Destaca-se que próximo de 100% dos extrativistas realizam o trabalho em grupos familiares compostos pelo casal e filhos, incluindo, muitas vezes, crianças. Registros constantes dos relatórios internos dão conta de que existem algumas dificuldades enfrentadas pelos extrativistas que merecem atenção especial: 1. Dificuldade na obtenção Declaração de Aptidão ao PRONAF (DAP), que está sendo substituída pelo Cadastro do Agricultor Familiar (CAF); 2. Alto grau de informalidade; 3. Dificuldade na obtenção de notas fiscais de venda e abertura de conta-corrente; 4. Baixo grau de organização em grupos formais, como cooperativas e associações; 5. Baixo apoio em assistência e extensão rurais regulares e continuadas, dado que a maioria das ATERs estão desprovidas de condições suficientes; 6. Carência de infraestrutura para beneficiamento, armazenamento e transporte; 7. Alta dependência de compradores intermediários, resultado do baixo nível de organização e da falta de estrutura própria; 8. Pouco conhecimento dos mercados potenciais; 9. Possível inconsistência entre dados da PEVS e a capacidade de produção de alguns municípios, o que limita o valor da subvenção da PGPM-Bio.
+
+Mesmo com todas essas dificuldades relatadas pelos extrativistas, os técnicos ouviram daqueles que foram atingidos pela política que reconhecem a sua importância e que precisam dela para sua subsistência.
+
+## Dados da PEVS/IBGE - Produção extrativa de PFNM
+
+Os principais produtos florestais não madeireiros (PFNM) constituem a pesquisa PEVS/IBGE obtida atraves do pacote Sidrar:
+
+```{r echo=TRUE, warning=FALSE}
+dados_extrativismo <- sidrar::get_sidra(289, variable = "allxp", period = "all", geo = "Brazil",
+geo.filter = NULL, classific = "all", category = "all", header = TRUE,
+format = 4, digits = "default", api = NULL)
+
+names(dados_extrativismo)[13] <- 'Tipo'
+```
+
+### Gráfico Volume e Valor da produção
+
+```{r}
+library("tidyr")
+library("ggplot2")
+```
+
+```{r echo=TRUE}
+dplyr::slice(dados_extrativismo, c(3,4,5,6,7,9,10,11,12,17,22,26)) %>%
+  ggplot() +
+  geom_col(aes(x = Valor, y = reorder(Tipo, Valor)), colour = 'dark green', size = 1, fill = 'green')
+```
+
+# Método: Regressão entre Intervenção e Produção
+
+## Dados de produção e intervenção:
+
+Diretório local:
+
+```{r, warning=FALSE}
+getwd()
+```
+
+Importação dos dados:
+
+```{r, warning=FALSE}
+dados_prod_interv <- readxl::read_excel("dados_prod_interv.xlsx")
+```
+
+Preparação do Gráfico
+
+```{r, warning=FALSE}
+politica_publica <- ggplot(dados_prod_interv, aes(x = Intervenção, y = Produção)) + 
+                        geom_point() +
+                        geom_smooth(method = "lm")
+```
+
+### Regressão entre Produção e Intervenção:
+
+```{r, warning=FALSE}
+plot(politica_publica)
+```
+
+Como apontado acima, pode existir um efeito da Intervenção sobre a produção no período analisado.
+
+## Correlação:
+
+Conforme gráfico acima, estabeleceremos a correlação entre as variáveis.\
+Desta forma utilizaremos o pacote corrplot
+
+```{r echo=TRUE, warning=FALSE}
+dados_prod_interv %>% dplyr::select_if(is.numeric) %>% cor() %>%
+corrplot::corrplot(.,method="number",type="upper",diag=FALSE )
+```
+
+Assim fica claro que com o passar dos anos tanto a produção quanto a intervenção aumentam, bem como a intervenção e a produção. A Intervenção ainda tem poucos anos para serem analisados (11) com o passar do tempo testes e regress\~]oes mais robustas podem ser feitas.
+
+## Modelo:
+
+Seguindo o modelo estabalecido, fazemos a regressão da produção em relação à intervenção.
+
+```{r}
+install.packages("stats")
+```
+
+```{r}
+library("tidyr")
+```
+
+```{r}
+Modelo <- dados_prod_interv %>% stats::lm(Produção ~ Intervenção, data = .)
+```
+
+```{r}
+summary(Modelo)
+```
+
+A corrleação e o modelo indicam a possibilidade de haver relação entre a produção e a intervenção, ou seja, a intervenção ser importante para o aumento da produção em 1.148 mil unidades de volume (kg) com p-valor de 0,02. Todavia um R~2~ (34%) muito baixo pode indicar que outras variáveis deveriam estar no modelo para explciar melhor o crescimento da produção.
+
+## Considerações Finais
+
+Este trabalho realizou uma investigação entre intervenção e produção. Neste momento serão apresentadas algumas considerações sobre a política de subvenção, com foco nos objetivos e parâmetros necessários para melhoria do desempenho em relação a sua abrangência e o potencial que a política poderia abarcar. Observando os resultados das Tabelas 01 e 02, tem-se que o instrumento não chega a uma parcela significativa dos extrativistas, tal que contemple os clientes potenciais da política no país.
+
+Tal fato revela a baixa relevância da PGPMBio em influenciar a oferta de produtos nativos e garantir complemento de renda a seus beneficiários, considerando todos aqueles que deveriam ser atendidos e os efeitos positivos que política produz para aqueles que conseguem acessá-la.
+
+O estímulo à proteção ambiental também fica restrito a poucos produtores que recebem o incentivo. Sendo assim, dada a baixa abrangência, não é possível afirmar que esse instrumento alcance objetivos em níveis nacionais. Porém, se aproxima da eficácia quando a análise se restringe àqueles que acessam o instrumento, como já exposto. Portanto, a restrita abrangência do instrumento pode ser ressaltada como o maior entrave para o cumprimento pleno dos objetivos da política. A intervenção estatal no mercado de produtos da sociobiodiversidade, como um todo, apenas será eficaz se o instrumento utilizado chegar a maior parte dos seus beneficiários potenciais e forem colhidos dados de maneira sistemática de modo a possibilitar seu acompanhamento e o direcionamento dos recursos, na medida em que as cadeias produtivas demonstrem necessidade.
+
+### Mapeamento de informações sobre mercados da sociobiodiversidade
+
+Como relatado anteriormente neste trabalho, produtos nativos estão presentes em todo território nacional, dentro dos diversos ecossistemas e biomas do país. Todavia, isso não significa que todos esses produtos são comercializados ou mesmo consumidos. Produtores extrativistas são aqueles que tiram da comercialização dos produtos da sociobiodiversidade o seu sustento e de sua família, mesmo que parcialmente. Aquilo que colhem da natureza e vendem é visto pelo IBGE como a produção de produtos extrativos, ou seja, o consumo próprio e as perdas, ou mesmo o estoque quando possível, não são mensurados.
+
+Na verdade, nem mesmo a comercialização é bem aferida, devido as dificuldades que a informalidade e pulverização dessa atividade impõem à aferição dos dados por parte dos órgãos de estatística do país. As falhas de mercado originadas nas informações incompletas, escassas e pouco acuradas compõe o principal entrave para o bom desenvolvimento dessa atividade. Devido a isso, políticas públicas voltadas a esse público são tão importantes e carecem de maior estruturação e composição com outras políticas de modo a obter sinergia entre elas.
+
+Alguns dados essenciais que não estão totalmente disponíveis e, em alguns casos, nem parcialmente são: a) Conhecimento e mapeamento da logística de escoamento, ou falta dela; b) Canais e atores do processo de comercialização; c) Estrutura das cadeias produtivas; d) Nível de associativismo e cooperativismo entre os extrativistas, e) Volume e valor de produção acurados de: Produtos in natura e Subprodutos beneficiados; f) Dados sobre consumo intermediário e final; g) Preços pagos aos produtores; h) Preços ao consumidor final; i) Quadro socioeconômico dos produtores extrativistas, com informações como: Renda dos produtores, Escolaridade, Idade, Alfabetização, Outras atividades econômicas remuneradas, Condições de saneamento e tantas outras; j) indicadores que reflitam o efeito da política na qualidade de vida dos extrativistas e na minimização dos riscos de insegurança alimentar e nutricional. É essencial para o formulador de políticas ter informações sobre o quadro socioeconômico dos potenciais beneficiários, das condições de contexto e ambiente em que essa política será aplicada e das informações que permitam a mensuração dos resultados que serão gerados (BIRRER et al, 2014).
+
+A PGPMBio está inserida num contexto extremo de escassez de informação. Outro grande problema é a falta de acurácia das informações existentes. Dados de subvenção da Conab muitas vezes confrontam dados de produção do IBGE. Em alguns casos os dados temporais do próprio instituto se mostram inconsistentes devido mudança de praça de pesquisa ou outros motivos. Ambos órgãos governamentais ainda estão ajustando suas metodologias de pesquisa de dados de mercado. Para que, a PGPMBio e as demais políticas, em curso e futuras, sejam eficazes e equânimes para o público extrativista, é necessário investir em geração de informações que possibilitem uma leitura aperfeiçoada do cenário do extrativismo no Brasil.
+
+### Estratégias para ampliação da Abrangência
+
+Desde 2014, a Conab, o extinto Ministério do Desenvolvimento Agrário e, em 2016, o Ministério do Meio Ambiente se uniram em prol de desenvolver ações objetivando maior abrangência da PGPMBio. O instrumento para essas ações eram os Termos de Execução Descentralizada, a cada ano publicados no Diário Oficial , com repasses de recursos dos ministérios à Conab para realização das atividades previstas nos planos de trabalho acordados anualmente. Em suma, grande parte das ações previstas envolviam o deslocamento de técnicos da Conab até as regiões produtoras para reuniões e eventos, expondo a política e seu normativo.
+
+Desde 2015 os dados de execução da PGPMBio apresentam crescimento, passando de R\$ 5 milhões, naquele ano, para R\$ 29,9 milhões em 2020 e estimativas apontam para R\$ 30 milhões em 2021, dado que existem pagamentos de 2021 em processamento ainda em 2022. Ações como essas precisam ser continuadas e ampliadas para que a execução se aproxime de um patamar de abrangência significativo, ou seja, que este instrumento de interferência governamental no mercado da sociobiodiversidade seja realmente eficaz, proporcionando condições para que todos aqueles que têm o direito também tenham o acesso, ao tempo em que promova o desenvolvimento das cadeias dos produtos incluídos na pauta da política.
+
+### Conhecimento da política por seus beneficiários
+
+A necessidade de garantir renda a essa parcela da população, que comprovadamente carece de melhores condições de vida, é o motivo pelo qual as estratégias de ampliação de abrangência devem existir de forma contínua e consistente e o passo fundamental para que o mecanismo funcione consiste em que os beneficiários potenciais tenham conhecimento do seu direito e oportunidade de acesso. Sem este pilar, toda a política perde o sentido.
+
+De fato, esse é o principal entrave da política atualmente, mesmo que ainda existam outros fatores, como a burocracia citada por Viana (2015). A experiência já demonstrou que quando o beneficiário compreende que tem direito ao acesso à PGPMBio ele envida esforços nessa direção, pois, como já fora demonstrado, a política produz resultados positivos na geração de renda para aqueles que a acessam. Os poucos acessos à política em relação à quantidade produzida, estimada pelo IBGE (que subestima essa estatística por motivos já citados), permitem inferir que há desconhecimento deste instrumento por parte dos extrativistas. Superar esse entrave e ampliar os recursos para subvenção constituem-se no principal desafio dos gestores do programa.
+
+### Estímulo à proteção do meio ambiente e serviços ambientais
+
+Esse é o objetivo final da PGPMBio e para ser alcançado todos os outros precisam ser eficazes. O produtor precisa ser influenciado a ofertar, para isso o preço mínimo precisa ser igual ou maior do que o custo variável médio de produção. Sendo assim é preciso que os extrativistas demandem a política para que haja transferência de renda, que precisa ser eficaz e de vasta abrangência. Tudo isso funcionando ao longo do tempo para que estes integrantes das comunidades de povos tradicionais decidam por fazer do uso sustentável da floresta o seu meio de vida e assim preservá-la.
+
+Deste raciocínio surge um pressuposto muito forte: de que os custos variáveis médios seriam suficientes para estimular a permanência do produtor extrativista na atividade. Mas se relaxarmos essa hipótese, seria preciso substituir essa hipótese por outra: é necessário incluir remuneração ao serviço ambiental prestado pelo extrativista para que o estímulo a proteção ambiental seja efetivo. Mesmo que esse serviço ambiental seja tratado como externalidade positiva, se não houver um mecanismo de compensação para esse componente, o montante ofertado pelo extrativista será sempre menor do que aquele desejado pela sociedade, o que implica em ineficiência da política.
+
+Um corolário: Se assumirmos verdade o estímulo à proteção ambiental por meio desta política, o serviço ambiental de manutenção dos recursos naturais deveria ser incorporado ao cálculo de preço mínimo.
+
+Dessa forma, se a hipótese for que o produtor extrativista entende que o serviço ambiental que ele presta faz parte do seu custo, no longo prazo a não remuneração desse componente pode ser fator determinante para a sua saída da atividade. Diante disso, o desafio futuro que a PGPMBio enfrentará para se fazer eficaz frente ao objetivo de estímulo à proteção do meio ambiente será o de mensurar e remunerar os serviços ambientais que os extrativistas prestam à sociedade ao fazer a manutenção dos estoques de recursos naturais e, considerando que a agregação de valor por meio desse serviço ambiental e a respectiva remuneração por isso, seriam um fator preponderante para a manutenção do extrativista na atividade, essa valoração contribuirá para que o extrativista atue como guardão da floresta.
+
+### Contribuições
+
+A PGPMBio tem muito a contribuir com o mercado dos produtos da sociobiodiversidade. Exerce o correto incentivo à oferta e garante renda, por meio de mecanismos de preço ajustado ao mercado e à atividade compensatória frente aos serviços ambientais a produtores extrativistas em situação desfavorável de mercado . Todavia não tem alcance para todos aqueles que têm o direito de utilizar desse mecanismo. A principal conclusão de tal fato é de que o instrumento é um bom meio de intervenção governamental, entretanto, precisa ser aplicado em maior escala para produzir melhores resultados, tanto do ponto de vista ambiental como socioeconômico.
+
+## Referências Bibliográficas
+
+BIRRER, S.; MARTINS, L. N.; PAES-DE-SOUZA, M.; GAMA., M. D. Gestão de políticas públicas: análise do plano nacional de promoção das cadeias de produtos da sociobiodiversidade. In: CONGRESSO NACIONAL DE EXCELÊNCIA EM GESTÃO, 10., 2014, Rio de Janeiro. Anais... Rio de Janeiro: UFF, 2014.
+
+BRASIL. Decreto-Lei n° 5212 de 21 de janeiro de 1943. Cria a comissão de Financiamento da Produção (C.F.P.), e dá outras providências. Diário Oficial da União: seção 1, Rio de Janeiro, p. 931, 22 jan. 1943.
+
+BRASIL. Decreto-Lei n.º 79, de 19/de dezembro de 1966. Institui normas para a fixação de preços mínimos e execução das operações de financiamento e aquisição de produtos agropecuários e adota outras providências. Diário Oficial da União: seção 1, Brasília, DF, 27 set. 1966.
+
+BRASIL. Decreto nº 4.339 de 22 de agosto de 2002. Institui princípios e diretrizes para a implementação da Política Nacional da Biodiversidade. Diário Oficial da União: seção 1, Brasília, DF, 23 ago. 2010.
+
+BRASIL. Decreto nº 6.040 de 7 de fevereiro de 2007. Institui a Política Nacional de Desenvolvimento Sustentável dos Povos e Comunidades Tradicionais. Diário Oficial da União: seção 1, Brasília, DF, 08 fev. 2007.
+
+BRASIL. Lei nº 11.326 de 24 de julho de 2006. Estabelece as diretrizes para a formulação da Política Nacional da Agricultura Familiar e Empreendimentos Familiares Rurais. Diário Oficial da União: seção 1, Brasília, DF, 25 jul. 2006.
+
+BRASIL. Lei nº 11.775 de 17 de setembro de 2008. Institui medidas de estímulo à liquidação ou regularização de dívidas originárias de operações de crédito rural e de crédito fundiário; altera as Leis nos 11.322, de 13 de julho de 2006, 8.171, de 17 de janeiro de 1991, 11.524, de 24 de setembro de 2007, 10.186, de 12 de fevereiro de 2001, 7.827, de 27 de setembro de 1989, 10.177, de 12 de janeiro de 2001, 11.718, de 20 de junho de 2008, 8.427, de 27 de maio de 1992, 10.420, de 10 de abril de 2002, o Decreto-Lei no 79, de 19 de dezembro de 1966, e a Lei no 10.978, de 7 de dezembro de 2004; e dá outras providências. Diário Oficial da União: seção 1, Brasília, DF, 18 set. 2008.
+
+BRASIL. Ministério da Agricultura, Pecuária e Abastecimento. Portaria Mapa nº 376 de 22 de dezembro de 2021. Publicar os preços mínimos para os produtos extrativos da safra 2022, relacionados no Anexo desta Portaria, fixados pelo Conselho Monetário Nacional por meio do Voto 105/2021 - CMN, de 16 de dezembro de 2021. Diário Oficial da União: seção 1, Brasília, DF, 23 dez. 2021.
+
+BRASIL. Ministério da Agricultura, Pecuária e Abastecimento. Ministério do Meio Ambiente. Instrução Normativa Conjunta Mapa/MMA N.º 17, de 28 de maio de 2009. Aprova as normas técnicas para a obtenção de produtos orgânicos oriundos do extrativismo sustentável orgânico. Diário Oficial da União: seção 1, Brasília, DF, 25 maio 2009.
+
+BRASIL. Ministério do Meio Ambiente. Ministério da Agricultura, Pecuária e Abastecimento. Ministério do Desenvolvimento Agrário. Ministério da Fazenda. Ministério do Planejamento, Orçamento e Gestão. Portaria Interministerial n° 311 de 19 de agosto de 2010. Institui Grupo Gestor das Ações de Apoio à Comercialização de Produtos Extrativistas, visando coordenar as ações voltadas à comercialização dos produtos oriundos do extrativismo obtidos por agricultores familiares enquadrados nos termos do art. 3º da Lei nº 11.326, de 24 de julho de 2006, ou por suas cooperativas e associações. Diário Oficial da União: seção 1, Brasília, DF, 20 ago. 2010.
+
+BRASIL. Ministério do Meio Ambiente. Ministério do Desenvolvimento Agrário. Ministério do Desenvolvimento Social e Combate à Fome. Companhia Nacional de Abastecimento Plano Nacional de Promoção das Cadeias de Produtos da Sociobiodiversidade. Brasília, DF: MDA, 2009. 21 p. Disponível em: <https://bibliotecadigital.seplan.planejamento.gov.br/> handle/123456789/1024?show=full. Acesso em: 03 fev. 2022.
+
+CONAB - COMPANHIA NACIONAL DE ABASTECIMENTO. Boletim da Sociobiodiversidade, Brasília, DF, v. 5, n. 2, maio 2021. Disponível em: <https://www.conab.gov.br/component/k2/item/download/37086_d23af1910f917902cdb0205b572b83e3>. Acesso em: 07 fev. 2022.
+
+CONAB - COMPANHIA NACIONAL DE ABASTECIMENTO. Manual de Operações: Título 35 -- Subvenção direta ao produtor extrativista (SDPE). Brasília, DF: Conab 2021. Disponível em: <https://www.conab.gov.br/institucional/normativos/moc>. Acesso em: 04 fev. 2022.
+
+CONAB - COMPANHIA NACIONAL DE ABASTECIMENTO. Preços mínimos. Brasília, DF. Conab, 2022. Disponível em: www.conab.gov.br/precos-minimos. Acesso em 02/02/2022.
+
+IBGE - INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA. Produção da extração vegetal e silvicultura - PEVS. Rio de Janeiro: IBGE, 2020. Disponível em: <https://metadados.ibge.gov.br/consulta/estatisticos/operacoes-estatisticas/VS>. Acesso em: 07 fev. 2022.
+
+LIMA, C. V. S et al. A política de garantia de preços mínimos para produtos da sociobiodiversidade (PGPM-Bio): potencialidades da intervenção estatal para a conservação ambiental em Goiás. 2017. 65 p. Dissertação (Programa de Pós-graduação em Ciências Sociais e Humanidades no Programa de Mestrado em Territórios e Expressões Culturais no Cerrado). Universidade Federal de Goiás, Goiânia, 2017.
+
+PNUMA - Programa das Nações Unidas para o Meio Ambiente. Rumo à economia verde: caminhos para o desenvolvimento sustentável e a erradicação da pobreza. Relatório. 2011. 672 p. Disponível em <https://wedocs.unep.org/handle/20.500.11822/22024>. Acesso em: 03 fev. 2022
+
+RAMOS, M. O., & CRUZ, F. T. Cadeias de produtos da sociobiodiversidade no sul do Brasil: valorização de frutas nativas da mata atlântica no contexto do trabalho com agroecologia. Amazônia, Revista Antropológica, Belém, v. 9, n. 1, 2017.
